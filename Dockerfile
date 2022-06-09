@@ -4,7 +4,8 @@ ARG DEBIAN_FRONTEND=noninteractive
 RUN dpkg --add-architecture i386 \
   && apt-get update \
   && apt-get -y upgrade \
-  && apt-get install -y curl wine32 wine64 xvfb
+  && apt-get install -y curl wine32 wine64 xvfb \
+  && rm -rf /var/lib/apt/lists/*
 
 RUN useradd -m vrising \
   && mkdir -p /home/vrising/.wine/drive_c/SteamCmd \

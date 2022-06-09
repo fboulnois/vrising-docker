@@ -1,0 +1,7 @@
+{
+  "Name": "My V Rising Docker Server",
+  "MaxConnectedUsers": 16,
+  "Password": "",
+  "API": {},
+  "Rcon": {}
+}

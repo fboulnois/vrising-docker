@@ -1,7 +1,8 @@
 # V Rising Server on Linux
 
-Runs a V Rising server on Linux using Wine in Docker. There are a few other
-similar projects on GitHub but none fit my requirements.
+Runs a [V Rising](https://playvrising.com/) server on Linux using Wine in
+Docker. There are a few other similar projects on GitHub but none fit my
+requirements.
 
 ## Features
 

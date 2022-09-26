@@ -7,12 +7,12 @@ services:
       VRISING_SAVE_NAME: world1
     volumes:
       - steamcmd:/home/vrising/.wine/drive_c/SteamCmd
-      - vrising-data:/home/vrising/.wine/drive_c/VRisingData
-      - vrising-server:/home/vrising/.wine/drive_c/VRisingServer
+      - data:/home/vrising/.wine/drive_c/VRisingData
+      - server:/home/vrising/.wine/drive_c/VRisingServer
     ports:
       - 9876:9876/udp
       - 9877:9877/udp
 volumes:
   steamcmd:
-  vrising-data:
-  vrising-server:
+  data:
+  server:

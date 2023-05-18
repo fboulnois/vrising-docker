@@ -1,7 +1,12 @@
 {
   "Name": "My V Rising Docker Server",
+  "Description": "See https://github.com/fboulnois/vrising-docker for more info",
   "MaxConnectedUsers": 16,
   "Password": "",
-  "API": {},
-  "Rcon": {}
+  "API": {
+    "Enabled": false
+  },
+  "Rcon": {
+    "Enabled": false
+  }
 }

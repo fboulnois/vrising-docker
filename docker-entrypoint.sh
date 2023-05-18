@@ -15,4 +15,4 @@ if [ -f ServerHostSettings.json ]; then
 fi
 
 xvfb_wine steamcmd.exe +force_install_dir 'C:\VRisingServer' +login anonymous +app_update 1829350 validate +quit
-xvfb_wine VRisingServer.exe -persistentDataPath 'C:\VRisingData' -serverName "${VRISING_SERVER_NAME}" -saveName "${VRISING_SAVE_NAME}"
+xvfb_wine VRisingServer.exe -persistentDataPath 'C:\VRisingData'

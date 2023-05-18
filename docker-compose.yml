@@ -2,9 +2,6 @@ version: "3.9"
 services:
   vrising:
     image: vrising-docker
-    environment:
-      VRISING_SERVER_NAME: My V Rising Docker Server
-      VRISING_SAVE_NAME: world1
     volumes:
       - steamcmd:/home/vrising/.wine/drive_c/SteamCmd
       - data:/home/vrising/.wine/drive_c/VRisingData

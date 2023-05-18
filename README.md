@@ -24,10 +24,6 @@ PvP server using the V Rising built-in defaults which is not recommended.
 See the [StunlockStudios/vrising-dedicated-server-instructions](https://github.com/StunlockStudios/vrising-dedicated-server-instructions)
 for more information on how to configure these settings.
 
-You should also edit the `VRISING_SERVER_NAME` and `VRISING_SAVE_NAME` in the
-`environment` section in the [`docker-compose.yml`](docker-compose.yml) file,
-otherwise it will use default values.
-
 ## Build and Deploy
 
 Building the container and deploying the service is simple.

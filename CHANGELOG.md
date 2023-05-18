@@ -1,5 +1,16 @@
 # Changelog
 
+## [v1.0.4](https://github.com/fboulnois/vrising-docker/compare/v1.0.3...v1.0.4) - 2023-05-18
+
+### Added
+
+* Use docker compose instead of swarm
+* Update server settings for gloomrot
+
+### Changed
+
+* Remove use of environment variables
+
 ## [v1.0.3](https://github.com/fboulnois/vrising-docker/compare/v1.0.2...v1.0.3) - 2022-09-26
 
 ### Changed

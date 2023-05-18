@@ -1,6 +1,7 @@
 version: "3.9"
 services:
   vrising:
+    build: .
     image: vrising-docker
     volumes:
       - steamcmd:/home/vrising/.wine/drive_c/SteamCmd

@@ -31,14 +31,13 @@ Building the container and deploying the service is simple.
 ### Build
 
 ```sh
-docker build . --tag vrising-docker
-docker swarm init || true  # this only needs to be run once
+docker compose build
 ```
 
 ### Deploy
 
 ```sh
-docker stack deploy -c docker-compose.yml vrising-docker
+docker compose up
 ```
 
 There is also a [`Makefile`](Makefile) with shortcuts to these commands to build

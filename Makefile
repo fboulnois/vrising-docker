@@ -1,16 +1,8 @@
 DOCKER := $(if $(shell docker ps >/dev/null 2>&1 && echo ok), docker, sudo docker)
-
-EMPTY :=
-SPACE := $(EMPTY) $(EMPTY)
-DIRNAME := $(lastword $(subst /,$(SPACE),$(subst $(SPACE),_,$(CURDIR))))
-
-.PHONY: build bootstrap clean purge deploy rm
+DIRNAME := $(notdir $(CURDIR))
 
 build:
-	$(DOCKER) build . --tag $(DIRNAME)
-
-bootstrap:
-	$(DOCKER) swarm init || true
+	$(DOCKER) compose build
 
 clean:
 	$(DOCKER) system prune -f
@@ -18,8 +10,8 @@ clean:
 purge: clean
 	$(DOCKER) volume prune -f
 
-deploy:
-	$(DOCKER) stack deploy -c docker-compose.yml $(DIRNAME)
+up:
+	$(DOCKER) compose up -d
 
-rm:
-	$(DOCKER) stack rm $(DIRNAME)
+down:
+	$(DOCKER) compose down

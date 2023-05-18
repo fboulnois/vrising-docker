@@ -17,7 +17,7 @@ each part can be updated independently
 ## Configuration
 
 You should replace the `ServerGameSettings.json` and `ServerHostSettings.json`
-in the [settings directory](settings) with your own, otherwise a default PvE
+in the [settings directory](settings) with your own, otherwise a standard PvE
 server will be created. If the settings directory is empty then it will create a
 PvP server using the V Rising built-in defaults which is not recommended.
 

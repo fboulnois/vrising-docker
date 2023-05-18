@@ -42,3 +42,10 @@ docker compose up
 
 There is also a [`Makefile`](Makefile) with shortcuts to these commands to build
 and deploy the server more easily.
+
+## Connect
+
+To connect to the newly created server, go to Play -> Online Play -> PVP. Click
+the `Direct Connect` button in the bottom middle of the screen. Enter `127.0.0.1`
+as the Server Game Name, and make sure LAN server is **unchecked**, then click
+the Connect button.

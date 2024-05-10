@@ -27,6 +27,5 @@ EXPOSE 9877/udp
 STOPSIGNAL SIGINT
 
 COPY docker-entrypoint.sh /usr/local/bin
-COPY settings/ /home/vrising
 
 ENTRYPOINT [ "docker-entrypoint.sh" ]

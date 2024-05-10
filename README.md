@@ -6,7 +6,7 @@ requirements.
 
 ## Features
 
-* Built on Debian 11 for portability
+* Built on Debian 12 for portability
 * Uses a non-root user for security
 * Only includes the necessary packages `curl`, `wine`, and `xvfb` to bootstrap
 * Simple `Dockerfile` and `docker-compose.yml` files

@@ -16,3 +16,6 @@ up:
 
 down:
 	$(DOCKER) compose down
+
+logs:
+	$(DOCKER) compose logs -f

@@ -16,13 +16,13 @@ each part can be updated independently
 
 ## Configuration
 
-You should replace the `ServerGameSettings.json` and `ServerHostSettings.json`
-in the [settings directory](settings) with your own, otherwise a standard PvE
-server will be created. If the settings directory is empty then it will create a
-PvP server using the V Rising built-in defaults which is not recommended.
-
-See the [StunlockStudios/vrising-dedicated-server-instructions](https://github.com/StunlockStudios/vrising-dedicated-server-instructions)
+By default, the [settings directory](settings) is empty. You should add a
+`ServerGameSettings.json` and `ServerHostSettings.json` to this directory to
+configure the server. See the [StunlockStudios/vrising-dedicated-server-instructions](https://github.com/StunlockStudios/vrising-dedicated-server-instructions)
 for more information on how to configure these settings.
+
+If these files are missing and the settings directory is empty then a PvP server
+will be created using the V Rising built-in defaults which is not recommended.
 
 ## Build and Deploy
 

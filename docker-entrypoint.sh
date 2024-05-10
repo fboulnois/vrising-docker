@@ -7,11 +7,11 @@ xvfb_wine() {
 }
 
 mkdir -p /home/vrising/.wine/drive_c/VRisingData/Settings
-if [ -f ServerGameSettings.json ]; then
-  cp ServerGameSettings.json /home/vrising/.wine/drive_c/VRisingData/Settings/ServerGameSettings.json
+if [ -f settings/ServerGameSettings.json ]; then
+  cp settings/ServerGameSettings.json /home/vrising/.wine/drive_c/VRisingData/Settings/ServerGameSettings.json
 fi
-if [ -f ServerHostSettings.json ]; then
-  cp ServerHostSettings.json /home/vrising/.wine/drive_c/VRisingData/Settings/ServerHostSettings.json
+if [ -f settings/ServerHostSettings.json ]; then
+  cp settings/ServerHostSettings.json /home/vrising/.wine/drive_c/VRisingData/Settings/ServerHostSettings.json
 fi
 
 xvfb_wine steamcmd.exe +force_install_dir 'C:\VRisingServer' +login anonymous +app_update 1829350 validate +quit

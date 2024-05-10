@@ -7,6 +7,7 @@ services:
       - steamcmd:/home/vrising/.wine/drive_c/SteamCmd
       - data:/home/vrising/.wine/drive_c/VRisingData
       - server:/home/vrising/.wine/drive_c/VRisingServer
+      - ./settings:/home/vrising/settings
     ports:
       - 9876:9876/udp
       - 9877:9877/udp

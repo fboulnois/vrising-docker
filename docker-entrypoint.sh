@@ -3,7 +3,7 @@
 set -eu
 
 xvfb_wine() {
-  sleep 1 && xvfb-run -e /dev/stdout -s "-screen 0 1024x768x16 -nolisten tcp -nolisten unix" wine "$@"
+  sleep 1 && xvfb-run -e /dev/stdout -s "-screen 0 1024x768x16 -nolisten tcp -nolisten unix" wine "$@" || true
 }
 
 mkdir -p /home/vrising/.wine/drive_c/VRisingData/Settings

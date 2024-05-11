@@ -1,5 +1,19 @@
 # Changelog
 
+## [v1.1.0](https://github.com/fboulnois/vrising-docker/compare/v1.0.4...v1.1.0) - 2024-05-11
+
+### Added
+
+* Mount settings directory in container
+* Ignore settings directory
+* Add target to view docker compose logs
+* Improve docker sudo detection in Makefile
+* Upgrade to debian 12
+
+### Changed
+
+* Remove custom server settings
+
 ## [v1.0.4](https://github.com/fboulnois/vrising-docker/compare/v1.0.3...v1.0.4) - 2023-05-18
 
 ### Added

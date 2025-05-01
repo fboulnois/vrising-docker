@@ -14,5 +14,6 @@ if [ -f settings/ServerHostSettings.json ]; then
   cp settings/ServerHostSettings.json /home/vrising/.wine/drive_c/VRisingData/Settings/ServerHostSettings.json
 fi
 
+xvfb_wine winecfg -v win10
 xvfb_wine steamcmd.exe +force_install_dir 'C:\VRisingServer' +login anonymous +app_update 1829350 validate +quit
 xvfb_wine VRisingServer.exe -persistentDataPath 'C:\VRisingData'

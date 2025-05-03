@@ -1,5 +1,11 @@
 # Changelog
 
+## [v1.1.1](https://github.com/fboulnois/vrising-docker/compare/v1.1.0...v1.1.1) - 2025-05-01
+
+### Fixed
+
+* Configure wine to use windows 10
+
 ## [v1.1.0](https://github.com/fboulnois/vrising-docker/compare/v1.0.4...v1.1.0) - 2024-05-11
 
 ### Added

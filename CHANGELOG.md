@@ -1,6 +1,16 @@
 # Changelog
 
-## [v1.1.1](https://github.com/fboulnois/vrising-docker/compare/v1.1.0...v1.1.1) - 2025-05-01
+## [v1.1.2](https://github.com/fboulnois/vrising-docker/compare/v1.1.1...v1.1.2) - 2026-02-16
+
+### Added
+
+* Upgrade to debian 13
+
+### Fixed
+
+* Remove version from compose files
+
+## [v1.1.1](https://github.com/fboulnois/vrising-docker/compare/v1.1.0...v1.1.1) - 2025-05-03
 
 ### Fixed
 
